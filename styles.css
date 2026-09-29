@@ -1,13 +1,13 @@
 /* =========================================
-   ROOT
+   VARIABLES
 ========================================= */
 
 :root {
-  --bg: #f4f3ee;
+  --background: #f3f1eb;
   --text: #111111;
-  --muted: #72716c;
-  --line: #d8d6cf;
-  --soft: #e7e5de;
+  --muted: #77746d;
+  --line: #d7d4cc;
+  --soft: #e3e0d8;
 
   --page-padding: 32px;
   --max-width: 1500px;
@@ -28,7 +28,8 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+
+  background: var(--background);
   color: var(--text);
 
   font-family:
@@ -48,13 +49,8 @@ a {
   text-decoration: none;
 }
 
-button,
-input,
-textarea {
-  font: inherit;
-}
-
 button {
+  font: inherit;
   color: inherit;
 }
 
@@ -70,39 +66,46 @@ body.modal-open {
 .site-header {
   position: sticky;
   top: 0;
+
   z-index: 100;
 
   display: grid;
-  grid-template-columns: 1fr auto auto;
+
+  grid-template-columns:
+    1fr
+    auto
+    auto;
+
   align-items: center;
-  gap: 28px;
 
-  width: 100%;
-  padding: 18px var(--page-padding);
+  gap: 30px;
 
-  background: rgba(244, 243, 238, 0.95);
+  padding:
+    18px
+    var(--page-padding);
+
+  background:
+    rgba(243, 241, 235, 0.94);
+
   backdrop-filter: blur(12px);
 
-  border-bottom: 1px solid var(--line);
+  border-bottom:
+    1px solid var(--line);
 }
 
 .site-name {
   font-size: 17px;
   font-weight: 600;
-  letter-spacing: -0.02em;
 }
 
 .main-nav {
   display: flex;
-  align-items: center;
   gap: 24px;
 }
 
 .main-nav a {
   font-size: 14px;
   color: var(--muted);
-
-  transition: color 0.2s ease;
 }
 
 .main-nav a:hover {
@@ -123,20 +126,20 @@ body.modal-open {
 }
 
 .language-button {
+  border: 0;
+
   padding: 0;
 
-  background: none;
-  border: 0;
+  background: transparent;
 
   color: var(--muted);
 
   cursor: pointer;
 }
 
-.language-button.active,
-.language-button:hover {
+.language-button.active {
   color: var(--text);
-  font-weight: 700;
+  font-weight: bold;
 }
 
 
@@ -146,7 +149,10 @@ body.modal-open {
 
 section {
   width: min(
-    calc(100% - (var(--page-padding) * 2)),
+    calc(
+      100% -
+      var(--page-padding) * 2
+    ),
     var(--max-width)
   );
 
@@ -155,25 +161,35 @@ section {
 
 .section-heading {
   display: grid;
-  grid-template-columns: 70px 1fr;
+
+  grid-template-columns:
+    70px
+    1fr;
+
   align-items: baseline;
 
-  margin-bottom: 36px;
+  margin-bottom: 45px;
 }
 
 .section-number {
-  margin: 0;
+  color: var(--muted);
 
   font-size: 12px;
-  color: var(--muted);
 }
 
 .section-heading h2 {
   margin: 0;
 
-  font-size: clamp(34px, 5vw, 68px);
+  font-size:
+    clamp(
+      40px,
+      5vw,
+      72px
+    );
+
   font-weight: 400;
-  letter-spacing: -0.04em;
+
+  letter-spacing: -0.045em;
 }
 
 
@@ -182,48 +198,196 @@ section {
 ========================================= */
 
 .hero {
-  min-height: 68vh;
+  min-height: 82vh;
 
-  display: flex;
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    0.8fr;
+
   align-items: center;
 
-  padding-top: 80px;
-  padding-bottom: 80px;
+  gap: 70px;
+
+  padding-top: 70px;
+  padding-bottom: 90px;
 }
 
 .hero-copy {
-  max-width: 1000px;
+  max-width: 800px;
 }
 
 .eyebrow {
-  margin: 0 0 24px;
-
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  margin:
+    0
+    0
+    25px;
 
   color: var(--muted);
+
+  font-size: 12px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.1em;
 }
 
 .hero h1 {
   margin: 0;
 
-  font-size: clamp(62px, 11vw, 165px);
+  font-size:
+    clamp(
+      68px,
+      10vw,
+      155px
+    );
+
   font-weight: 400;
-  line-height: 0.9;
-  letter-spacing: -0.06em;
+
+  line-height: 0.87;
+
+  letter-spacing: -0.065em;
 }
 
 .hero-intro {
-  max-width: 700px;
+  max-width: 650px;
 
-  margin-top: 34px;
-  margin-bottom: 0;
+  margin:
+    40px
+    0
+    0;
 
-  font-size: clamp(18px, 2vw, 28px);
+  font-size:
+    clamp(
+      18px,
+      2vw,
+      27px
+    );
+
   line-height: 1.35;
 
   color: var(--muted);
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-image-wrapper {
+  width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+
+  height: 72vh;
+
+  min-height: 560px;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position:
+    center center;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.intro-section {
+  padding-top: 120px;
+  padding-bottom: 140px;
+
+  border-top:
+    1px solid var(--line);
+}
+
+.big-intro {
+  max-width: 1100px;
+
+  margin: 0;
+
+  font-size:
+    clamp(
+      34px,
+      5vw,
+      72px
+    );
+
+  line-height: 1.08;
+
+  letter-spacing: -0.045em;
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about-section {
+  padding-top: 110px;
+  padding-bottom: 140px;
+
+  border-top:
+    1px solid var(--line);
+}
+
+.about-copy {
+  max-width: 900px;
+
+  margin-left: 70px;
+}
+
+.about-copy p {
+  margin:
+    0
+    0
+    30px;
+
+  font-size:
+    clamp(
+      21px,
+      3vw,
+      37px
+    );
+
+  line-height: 1.25;
+
+  letter-spacing: -0.02em;
+}
+
+
+/* =========================================
+   EDITORIAL IMAGE
+========================================= */
+
+.editorial-image {
+  width: min(
+    calc(
+      100% -
+      var(--page-padding) * 2
+    ),
+    var(--max-width)
+  );
+
+  margin:
+    120px
+    auto;
+}
+
+.editorial-image img {
+  width: 100%;
+
+  max-height: 850px;
+
+  display: block;
+
+  object-fit: cover;
 }
 
 
@@ -232,34 +396,90 @@ section {
 ========================================= */
 
 .works-section {
-  padding-top: 100px;
-  padding-bottom: 120px;
+  padding-top: 110px;
+  padding-bottom: 140px;
 
-  border-top: 1px solid var(--line);
+  border-top:
+    1px solid var(--line);
 }
 
 
 /* =========================================
-   FILTERS
+   COLLECTION IMAGE
 ========================================= */
+
+.collection-intro {
+  margin-bottom: 90px;
+}
+
+.collection-image {
+  width: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.collection-caption {
+  max-width: 650px;
+
+  margin-top: 22px;
+}
+
+.collection-caption p {
+  margin: 0;
+
+  font-size:
+    clamp(
+      18px,
+      2vw,
+      26px
+    );
+
+  line-height: 1.35;
+
+  color: var(--muted);
+}
+
+
+/* =========================================
+   FILTER AREA
+========================================= */
+
+.filter-area {
+  margin-bottom: 45px;
+}
+
+.filter-label {
+  margin:
+    0
+    0
+    18px;
+
+  font-size: 14px;
+
+  color: var(--muted);
+}
 
 .filter-bar {
   display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
 
-  margin-bottom: 36px;
+  flex-wrap: wrap;
+
+  gap: 9px;
 }
 
 .filter-bar button {
-  padding: 9px 15px;
+  padding:
+    9px
+    16px;
+
+  border:
+    1px solid var(--line);
+
+  border-radius: 100px;
 
   background: transparent;
-
-  border: 1px solid var(--line);
-  border-radius: 999px;
-
-  font-size: 14px;
 
   cursor: pointer;
 
@@ -275,24 +495,35 @@ section {
 
 .filter-bar button.active {
   background: var(--text);
-  color: var(--bg);
 
   border-color: var(--text);
+
+  color: var(--background);
 }
 
 
 /* =========================================
-   ART GRID
+   FISH GRID
 ========================================= */
 
 .art-grid {
   display: grid;
 
   grid-template-columns:
-    repeat(2, minmax(0, 1fr));
+    repeat(
+      2,
+      minmax(0, 1fr)
+    );
 
-  gap: 54px 28px;
+  gap:
+    60px
+    28px;
 }
+
+
+/* =========================================
+   CARD
+========================================= */
 
 .art-card {
   width: 100%;
@@ -306,8 +537,9 @@ section {
 
   padding: 0;
 
-  background: none;
   border: 0;
+
+  background: transparent;
 
   text-align: left;
 
@@ -316,18 +548,20 @@ section {
 
 
 /* =========================================
-   ARTWORK IMAGE FRAME
+   FISH IMAGES
 ========================================= */
 
 .artwork-image {
-  display: block;
-
   width: 100%;
 
   aspect-ratio: 3 / 2;
 
+  display: block;
+
   object-fit: cover;
-  object-position: center center;
+
+  object-position:
+    center center;
 
   background: var(--soft);
 
@@ -338,38 +572,42 @@ section {
 
 .art-open:hover .artwork-image {
   transform: scale(0.99);
+
   opacity: 0.94;
 }
 
 
 /* =========================================
-   INDIVIDUAL IMAGE POSITIONING
-   Adjust these later if needed
+   OPTIONAL INDIVIDUAL IMAGE POSITIONING
 ========================================= */
 
 .pesce-1 {
-  object-position: center 57%;
+  object-position: center 55%;
 }
 
 .pesce-2 {
-  object-position: center 47%;
+  object-position: center 48%;
 }
 
-.pesce-3 {
-  object-position: center center;
-}
-
-.pesce-4 {
-  object-position: center center;
-}
-
-.pesce-5 {
+.pesce-3,
+.pesce-4,
+.pesce-5,
+.pesce-6,
+.pesce-7,
+.pesce-8,
+.pesce-9,
+.pesce-10,
+.pesce-11,
+.pesce-12,
+.pesce-13,
+.pesce-14,
+.pesce-15 {
   object-position: center center;
 }
 
 
 /* =========================================
-   ART META
+   CARD TEXT
 ========================================= */
 
 .art-meta {
@@ -377,9 +615,13 @@ section {
 }
 
 .art-meta h3 {
-  margin: 0 0 4px;
+  margin:
+    0
+    0
+    4px;
 
   font-size: 17px;
+
   font-weight: 500;
 }
 
@@ -387,82 +629,7 @@ section {
   margin: 0;
 
   font-size: 14px;
-  color: var(--muted);
-}
 
-
-/* =========================================
-   ABOUT
-========================================= */
-
-.about-section {
-  padding-top: 100px;
-  padding-bottom: 120px;
-
-  border-top: 1px solid var(--line);
-}
-
-.about-copy {
-  max-width: 900px;
-  margin-left: 70px;
-}
-
-.about-copy p {
-  margin-top: 0;
-  margin-bottom: 28px;
-
-  font-size: clamp(22px, 3vw, 38px);
-  line-height: 1.25;
-  letter-spacing: -0.025em;
-}
-
-
-/* =========================================
-   EXHIBITIONS
-========================================= */
-
-.exhibitions-section {
-  padding-top: 100px;
-  padding-bottom: 120px;
-
-  border-top: 1px solid var(--line);
-}
-
-.exhibition-list {
-  margin-left: 70px;
-}
-
-.exhibition-item {
-  display: grid;
-  grid-template-columns: 100px 1fr;
-  gap: 30px;
-
-  padding: 24px 0;
-
-  border-top: 1px solid var(--line);
-}
-
-.exhibition-item:last-child {
-  border-bottom: 1px solid var(--line);
-}
-
-.exhibition-year {
-  font-size: 14px;
-  color: var(--muted);
-}
-
-.exhibition-item p {
-  margin: 0;
-
-  font-size: 18px;
-}
-
-.exhibition-item small {
-  display: block;
-
-  margin-top: 4px;
-
-  font-size: 13px;
   color: var(--muted);
 }
 
@@ -472,48 +639,51 @@ section {
 ========================================= */
 
 .contact-section {
-  padding-top: 100px;
+  padding-top: 110px;
   padding-bottom: 140px;
 
-  border-top: 1px solid var(--line);
+  border-top:
+    1px solid var(--line);
 }
 
 .contact-copy {
-  max-width: 800px;
-
   margin-left: 70px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 14px;
 }
 
 .contact-copy p {
-  margin: 0 0 18px;
+  max-width: 700px;
 
-  font-size: clamp(20px, 3vw, 34px);
+  margin:
+    0
+    0
+    15px;
+
+  font-size:
+    clamp(
+      22px,
+      3vw,
+      34px
+    );
 }
 
 .contact-copy a {
-  border-bottom: 1px solid var(--text);
-}
+  font-size:
+    clamp(
+      18px,
+      2vw,
+      25px
+    );
 
-
-/* =========================================
-   FOOTER
-========================================= */
-
-.site-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-
-  padding: 22px var(--page-padding);
-
-  border-top: 1px solid var(--line);
-
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.site-footer p {
-  margin: 0;
+  border-bottom:
+    1px solid var(--text);
 }
 
 
@@ -523,6 +693,7 @@ section {
 
 .art-modal {
   position: fixed;
+
   inset: 0;
 
   z-index: 1000;
@@ -536,9 +707,11 @@ section {
 
 .art-modal-backdrop {
   position: absolute;
+
   inset: 0;
 
-  background: rgba(0, 0, 0, 0.78);
+  background:
+    rgba(0, 0, 0, 0.8);
 }
 
 .art-modal-content {
@@ -547,43 +720,52 @@ section {
   top: 50%;
   left: 50%;
 
-  width: min(1100px, calc(100% - 40px));
+  transform:
+    translate(
+      -50%,
+      -50%
+    );
 
-  max-height: calc(100vh - 40px);
+  width:
+    min(
+      1100px,
+      calc(100% - 40px)
+    );
 
-  transform: translate(-50%, -50%);
+  max-height:
+    calc(100vh - 40px);
 
   overflow-y: auto;
 
-  background: var(--bg);
-
   padding: 24px;
+
+  background:
+    var(--background);
 }
 
 .modal-close {
   position: absolute;
 
-  top: 14px;
-  right: 18px;
+  top: 12px;
+  right: 17px;
 
-  z-index: 10;
+  z-index: 2;
 
-  padding: 0;
-
-  background: transparent;
   border: 0;
 
-  font-size: 34px;
-  line-height: 1;
+  background: transparent;
+
+  font-size: 36px;
 
   cursor: pointer;
 }
 
 #modal-image {
-  display: block;
-
   width: 100%;
+
   max-height: 72vh;
+
+  display: block;
 
   object-fit: contain;
 
@@ -591,20 +773,53 @@ section {
 }
 
 .modal-info {
-  padding-top: 18px;
+  padding-top: 20px;
 }
 
 .modal-info h2 {
-  margin: 0 0 8px;
+  margin:
+    0
+    0
+    8px;
 
   font-size: 30px;
+
   font-weight: 400;
 }
 
 .modal-info p {
-  margin: 4px 0;
+  margin: 3px 0;
 
   color: var(--muted);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  gap: 20px;
+
+  padding:
+    22px
+    var(--page-padding);
+
+  border-top:
+    1px solid var(--line);
+
+  font-size: 12px;
+
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0;
 }
 
 
@@ -619,21 +834,18 @@ section {
   }
 
   .site-header {
-    grid-template-columns: 1fr auto;
-
-    gap: 14px;
+    grid-template-columns:
+      1fr
+      auto;
   }
 
   .main-nav {
-    grid-column: 1 / -1;
+    grid-column:
+      1 / -1;
 
     order: 3;
 
-    width: 100%;
-
     overflow-x: auto;
-
-    padding-top: 4px;
   }
 
   .main-nav a {
@@ -641,21 +853,22 @@ section {
   }
 
   .hero {
-    min-height: 60vh;
+    gap: 35px;
+  }
+
+  .hero-image {
+    min-height: 450px;
   }
 
   .section-heading {
-    grid-template-columns: 50px 1fr;
+    grid-template-columns:
+      50px
+      1fr;
   }
 
   .about-copy,
-  .exhibition-list,
   .contact-copy {
     margin-left: 50px;
-  }
-
-  .art-grid {
-    gap: 42px 20px;
   }
 
 }
@@ -672,16 +885,12 @@ section {
   }
 
   .site-header {
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 13px;
   }
 
   .site-name {
     font-size: 16px;
-  }
-
-  .language-switcher {
-    font-size: 12px;
   }
 
   .main-nav {
@@ -692,67 +901,76 @@ section {
     font-size: 13px;
   }
 
-  .hero {
-    min-height: 56vh;
+  .language-switcher {
+    font-size: 12px;
+  }
 
-    padding-top: 56px;
-    padding-bottom: 56px;
+  .hero {
+    min-height: auto;
+
+    grid-template-columns:
+      1fr;
+
+    gap: 40px;
+
+    padding-top: 60px;
+    padding-bottom: 70px;
   }
 
   .hero h1 {
-    font-size: clamp(56px, 19vw, 100px);
+    font-size:
+      clamp(
+        62px,
+        20vw,
+        100px
+      );
   }
 
   .hero-intro {
     font-size: 18px;
   }
 
-  .works-section,
+  .hero-image {
+    width: 100%;
+
+    height: auto;
+
+    min-height: 0;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+  }
+
+  .intro-section,
   .about-section,
-  .exhibitions-section,
+  .works-section,
   .contact-section {
-    padding-top: 68px;
-    padding-bottom: 80px;
+    padding-top: 75px;
+    padding-bottom: 85px;
+  }
+
+  .big-intro {
+    font-size: 38px;
   }
 
   .section-heading {
     display: block;
 
-    margin-bottom: 28px;
+    margin-bottom: 30px;
   }
 
   .section-number {
-    margin-bottom: 8px;
+    display: block;
+
+    margin-bottom: 7px;
   }
 
   .section-heading h2 {
-    font-size: 42px;
-  }
-
-  .filter-bar {
-    gap: 7px;
-
-    margin-bottom: 28px;
-  }
-
-  .filter-bar button {
-    padding: 8px 12px;
-
-    font-size: 13px;
-  }
-
-  .art-grid {
-    grid-template-columns: 1fr;
-
-    gap: 38px;
-  }
-
-  .artwork-image {
-    aspect-ratio: 3 / 2;
+    font-size: 45px;
   }
 
   .about-copy,
-  .exhibition-list,
   .contact-copy {
     margin-left: 0;
   }
@@ -761,26 +979,48 @@ section {
     font-size: 24px;
   }
 
-  .exhibition-item {
-    grid-template-columns: 65px 1fr;
-
-    gap: 14px;
+  .collection-intro {
+    margin-bottom: 55px;
   }
 
-  .contact-copy p {
-    font-size: 22px;
+  .collection-caption {
+    margin-top: 16px;
+  }
+
+  .filter-bar {
+    gap: 7px;
+  }
+
+  .filter-bar button {
+    padding:
+      8px
+      12px;
+
+    font-size: 13px;
+  }
+
+  .art-grid {
+    grid-template-columns:
+      1fr;
+
+    gap: 42px;
+  }
+
+  .artwork-image {
+    aspect-ratio: 3 / 2;
+  }
+
+  .art-modal-content {
+    width:
+      calc(100% - 20px);
+
+    padding: 14px;
   }
 
   .site-footer {
     flex-direction: column;
 
     gap: 4px;
-  }
-
-  .art-modal-content {
-    width: calc(100% - 20px);
-
-    padding: 16px;
   }
 
 }
