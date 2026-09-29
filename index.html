@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8">
 
@@ -10,7 +11,7 @@
 
   <meta
     name="description"
-    content="Pesci di metallo — Andrea Puccetti. Sculture e opere in metallo ispirate al mondo dei pesci."
+    content="Pesci di metallo — Andrea Puccetti. Sculture di pesci realizzate a mano in metallo."
   >
 
   <title>Pesci di metallo — Andrea Puccetti</title>
@@ -20,9 +21,9 @@
 
 <body>
 
-  <!-- =========================
+  <!-- ======================================
        HEADER
-  ========================== -->
+  ======================================= -->
 
   <header class="site-header">
 
@@ -30,21 +31,16 @@
       Andrea Puccetti
     </a>
 
-    <nav class="main-nav" aria-label="Main navigation">
-
-      <a href="#works">
-        <span data-lang="it">Pesci</span>
-        <span data-lang="en">Fish</span>
-      </a>
+    <nav class="main-nav">
 
       <a href="#about">
         <span data-lang="it">Chi sono</span>
         <span data-lang="en">About</span>
       </a>
 
-      <a href="#exhibitions">
-        <span data-lang="it">Esposizioni</span>
-        <span data-lang="en">Exhibitions</span>
+      <a href="#works">
+        <span data-lang="it">Pesci</span>
+        <span data-lang="en">Fish</span>
       </a>
 
       <a href="#contact">
@@ -54,15 +50,12 @@
 
     </nav>
 
-
-    <!-- LANGUAGE SWITCHER -->
-
-    <div class="language-switcher" aria-label="Language selector">
+    <div class="language-switcher">
 
       <button
-        type="button"
         class="language-button active"
         data-language="it"
+        type="button"
       >
         IT
       </button>
@@ -70,9 +63,9 @@
       <span>/</span>
 
       <button
-        type="button"
         class="language-button"
         data-language="en"
+        type="button"
       >
         EN
       </button>
@@ -82,22 +75,21 @@
   </header>
 
 
-
   <main>
 
-    <!-- =========================
+    <!-- ======================================
          HERO
-    ========================== -->
+    ======================================= -->
 
     <section
       class="hero"
       id="home"
-      aria-labelledby="hero-title"
     >
 
       <div class="hero-copy">
 
         <p class="eyebrow">
+
           <span data-lang="it">
             Scultura · Metallo · Pesci
           </span>
@@ -105,950 +97,114 @@
           <span data-lang="en">
             Sculpture · Metal · Fish
           </span>
+
         </p>
 
-
-        <h1 id="hero-title">
-          Pesci di metallo
+        <h1>
+          Pesci<br>
+          di metallo
         </h1>
 
-
         <p class="hero-intro" data-lang="it">
-          Pesci nati dal metallo, costruiti a mano uno alla volta.
-          Ogni esemplare ha una forma, un carattere e una difficoltà diversa.
+          Creature nate dal metallo,
+          costruite a mano una alla volta.
+          Ogni pesce ha una forma,
+          un carattere e una storia diversa.
         </p>
 
         <p class="hero-intro" data-lang="en">
-          Fish born from metal, handmade one at a time.
-          Each specimen has its own form, character and level of difficulty.
+          Creatures born from metal,
+          handmade one at a time.
+          Every fish has its own form,
+          character and story.
         </p>
 
       </div>
 
-    </section>
+      <div class="hero-image-wrapper">
 
-
-
-    <!-- =========================
-         WORKS / FISH
-    ========================== -->
-
-    <section
-      class="works-section"
-      id="works"
-      aria-labelledby="works-title"
-    >
-
-      <div class="section-heading">
-
-        <p class="section-number">
-          01
-        </p>
-
-        <h2 id="works-title">
-
-          <span data-lang="it">
-            I pesci
-          </span>
-
-          <span data-lang="en">
-            The fish
-          </span>
-
-        </h2>
-
-      </div>
-
-
-
-      <!-- FILTERS -->
-
-      <div
-        class="filter-bar"
-        aria-label="Filter artworks"
-      >
-
-        <button
-          class="active"
-          data-filter="all"
+        <img
+          src="images/andrea-pesci.jpg"
+          alt="Andrea Puccetti con i suoi pesci in metallo"
+          class="hero-image"
         >
-          <span data-lang="it">Tutti</span>
-          <span data-lang="en">All</span>
-        </button>
-
-
-        <button data-filter="nibble">
-          <span data-lang="it">Abboccata</span>
-          <span data-lang="en">Nibble</span>
-        </button>
-
-
-        <button data-filter="bite">
-          <span data-lang="it">Morso</span>
-          <span data-lang="en">Bite</span>
-        </button>
-
-
-        <button data-filter="hooked">
-          <span data-lang="it">Allamato</span>
-          <span data-lang="en">Hooked</span>
-        </button>
-
-
-        <button data-filter="big-catch">
-          <span data-lang="it">Grande cattura</span>
-          <span data-lang="en">Big Catch</span>
-        </button>
-
-
-        <button data-filter="brass">
-          <span data-lang="it">Ottone</span>
-          <span data-lang="en">Brass</span>
-        </button>
-
-      </div>
-
-
-
-      <!-- =========================
-           GALLERY
-      ========================== -->
-
-      <div class="art-grid">
-
-
-        <!-- PESCE 1 -->
-
-        <article
-          class="art-card"
-          data-category="nibble"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 1"
-            data-title-en="Fish 1"
-            data-medium-it="Metallo"
-            data-medium-en="Metal"
-            data-category-it="Abboccata"
-            data-category-en="Nibble"
-            data-image="images/pesce1.jpg"
-          >
-
-            <img
-              src="images/pesce1.jpg"
-              alt="Pesce di metallo 1"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 1</span>
-                <span data-lang="en">Fish 1</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Abboccata · Metallo
-                </span>
-
-                <span data-lang="en">
-                  Nibble · Metal
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-
-        <!-- PESCE 2 -->
-
-        <article
-          class="art-card"
-          data-category="bite"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 2"
-            data-title-en="Fish 2"
-            data-medium-it="Metallo"
-            data-medium-en="Metal"
-            data-category-it="Morso"
-            data-category-en="Bite"
-            data-image="images/pesce2.jpg"
-          >
-
-            <img
-              src="images/pesce2.jpg"
-              alt="Pesce di metallo 2"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 2</span>
-                <span data-lang="en">Fish 2</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Morso · Metallo
-                </span>
-
-                <span data-lang="en">
-                  Bite · Metal
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-
-        <!-- PESCE 3 -->
-
-        <article
-          class="art-card"
-          data-category="hooked"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 3"
-            data-title-en="Fish 3"
-            data-medium-it="Metallo"
-            data-medium-en="Metal"
-            data-category-it="Allamato"
-            data-category-en="Hooked"
-            data-image="images/pesce3.jpg"
-          >
-
-            <img
-              src="images/pesce3.jpg"
-              alt="Pesce di metallo 3"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 3</span>
-                <span data-lang="en">Fish 3</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Allamato · Metallo
-                </span>
-
-                <span data-lang="en">
-                  Hooked · Metal
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-
-        <!-- PESCE 4 -->
-
-        <article
-          class="art-card"
-          data-category="big-catch"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 4"
-            data-title-en="Fish 4"
-            data-medium-it="Metallo"
-            data-medium-en="Metal"
-            data-category-it="Grande cattura"
-            data-category-en="Big Catch"
-            data-image="images/pesce4.jpg"
-          >
-
-            <img
-              src="images/pesce4.jpg"
-              alt="Pesce di metallo 4"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 4</span>
-                <span data-lang="en">Fish 4</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Grande cattura · Metallo
-                </span>
-
-                <span data-lang="en">
-                  Big Catch · Metal
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-
-        <!-- PESCE 5 / OTTONE -->
-
-        <article
-          class="art-card"
-          data-category="brass"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 5"
-            data-title-en="Fish 5"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce5.jpg"
-          >
-
-            <img
-              src="images/pesce5.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 5</span>
-                <span data-lang="en">Fish 5</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-        <!-- PESCE 6 / OTTONE -->
-
-        <article
-          class="art-card"
-          data-category="brass"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 6"
-            data-title-en="Fish 6"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce6.jpg"
-          >
-
-            <img
-              src="images/pesce6.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 6</span>
-                <span data-lang="en">Fish 6</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-          <!-- PESCE 7 / OTTONE -->
-
-        <article
-          class="art-card"
-          data-category="brass"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 7"
-            data-title-en="Fish 7"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce7.jpg"
-          >
-
-            <img
-              src="images/pesce7.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 7</span>
-                <span data-lang="en">Fish 7</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-        <!-- PESCE 8 / OTTONE -->
-
-        <article
-          class="art-card"
-          data-category="brass"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 8"
-            data-title-en="Fish 8"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce8.jpg"
-          >
-
-            <img
-              src="images/pesce8.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 8</span>
-                <span data-lang="en">Fish 8</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-          <!-- PESCE 9 / OTTONE -->
-
-        <article
-          class="art-card"
-          data-category="brass"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 9"
-            data-title-en="Fish 9"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce5.jpg"
-          >
-
-            <img
-              src="images/pesce9.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 9</span>
-                <span data-lang="en">Fish 9</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
 
       </div>
 
     </section>
 
 
-        <!-- PESCE 10 / OTTONE -->
+    <!-- ======================================
+         INTRO
+    ======================================= -->
 
-        <article
-          class="art-card"
-          data-category="brass"
-        >
+    <section class="intro-section">
 
-          <button
-            class="art-open"
-            data-title-it="Pesce 10"
-            data-title-en="Fish 10"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce10.jpg"
-          >
+      <p class="big-intro" data-lang="it">
+        Pesci diversi, costruiti combinando metalli,
+        colori, forme e materiali trovati.
+        Nessun esemplare è identico a un altro.
+      </p>
 
-            <img
-              src="images/pesce10.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 10</span>
-                <span data-lang="en">Fish 10</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-      </div>
+      <p class="big-intro" data-lang="en">
+        Different fish made by combining metals,
+        colours, shapes and found materials.
+        No two specimens are exactly alike.
+      </p>
 
     </section>
 
-          <!-- PESCE 11 / OTTONE -->
 
-        <article
-          class="art-card"
-          data-category="brass"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 11"
-            data-title-en="Fish 11"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce5.jpg"
-          >
-
-            <img
-              src="images/pesce11.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 11</span>
-                <span data-lang="en">Fish 11</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-        <!-- PESCE 12 / OTTONE -->
-
-        <article
-          class="art-card"
-          data-category="brass"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 12"
-            data-title-en="Fish 12"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce5.jpg"
-          >
-
-            <img
-              src="images/pesce12.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 12</span>
-                <span data-lang="en">Fish 12</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-          <!-- PESCE 13 / OTTONE -->
-
-        <article
-          class="art-card"
-          data-category="brass"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 13"
-            data-title-en="Fish 13"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce13.jpg"
-          >
-
-            <img
-              src="images/pesce13.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 13</span>
-                <span data-lang="en">Fish 13</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-        <!-- PESCE 14 / OTTONE -->
-
-        <article
-          class="art-card"
-          data-category="brass"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 14"
-            data-title-en="Fish 14"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce14.jpg"
-          >
-
-            <img
-              src="images/pesce14.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 14</span>
-                <span data-lang="en">Fish 14</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-          <!-- PESCE 15 / OTTONE -->
-
-        <article
-          class="art-card"
-          data-category="brass"
-        >
-
-          <button
-            class="art-open"
-            data-title-it="Pesce 15"
-            data-title-en="Fish 15"
-            data-medium-it="Ottone"
-            data-medium-en="Brass"
-            data-category-it="Ottone"
-            data-category-en="Brass"
-            data-image="images/pesce15.jpg"
-          >
-
-            <img
-              src="images/pesce15.jpg"
-              alt="Pesce in ottone"
-              class="artwork-image"
-            >
-
-            <div class="art-meta">
-
-              <h3>
-                <span data-lang="it">Pesce 15</span>
-                <span data-lang="en">Fish 15</span>
-              </h3>
-
-              <p>
-                <span data-lang="it">
-                  Ottone
-                </span>
-
-                <span data-lang="en">
-                  Brass
-                </span>
-              </p>
-
-            </div>
-
-          </button>
-
-        </article>
-
-
-      </div>
-
-    </section>
-  
-
-    <!-- =========================
+    <!-- ======================================
          ABOUT
-    ========================== -->
+    ======================================= -->
 
     <section
       class="about-section"
       id="about"
-      aria-labelledby="about-title"
     >
 
       <div class="section-heading">
 
-        <p class="section-number">
-          02
-        </p>
+        <span class="section-number">
+          01
+        </span>
 
-        <h2 id="about-title">
-
-          <span data-lang="it">
-            Chi sono
-          </span>
-
-          <span data-lang="en">
-            About
-          </span>
-
+        <h2>
+          <span data-lang="it">Chi sono</span>
+          <span data-lang="en">About</span>
         </h2>
 
       </div>
-
 
       <div class="about-copy">
 
         <p data-lang="it">
-          Andrea Puccetti realizza pesci e creature in metallo,
-          lavorando ogni pezzo individualmente.
-          Il progetto <em>Pesci di metallo</em> nasce dall'incontro
-          tra forme organiche, materiali industriali e lavorazione manuale.
+          Andrea Puccetti realizza pesci e creature
+          in metallo lavorando ogni pezzo individualmente.
+          Le forme nascono dall'incontro tra materiali industriali,
+          elementi recuperati e lavorazione manuale.
         </p>
-
 
         <p data-lang="en">
-          Andrea Puccetti creates fish and other creatures in metal,
-          working on each piece individually.
-          <em>Pesci di metallo</em> emerges from the encounter
-          between organic forms, industrial materials and handcraft.
+          Andrea Puccetti creates fish and other creatures
+          in metal, working on every piece individually.
+          The forms emerge from the encounter between
+          industrial materials, found objects and handcraft.
         </p>
-
 
         <p data-lang="it">
-          Ogni pesce è diverso: alcuni sono semplici e immediati,
-          altri richiedono più tempo, precisione e lavorazione.
-          Le categorie della collezione riflettono questa diversa
-          difficoltà di cattura.
+          Ogni pesce è diverso.
+          Alcuni sono piccoli e semplici,
+          altri diventano più grandi,
+          complessi e difficili da catturare.
         </p>
 
-
         <p data-lang="en">
-          Every fish is different: some are simple and immediate,
-          while others require more time, precision and work.
-          The collection's categories reflect these different
-          levels of difficulty to catch.
+          Every fish is different.
+          Some are small and simple,
+          while others become larger,
+          more complex and harder to catch.
         </p>
 
       </div>
@@ -1056,153 +212,184 @@
     </section>
 
 
+    <!-- ======================================
+         OPTIONAL IMAGE BETWEEN SECTIONS
+    ======================================= -->
 
-    <!-- =========================
-         EXHIBITIONS
-    ========================== -->
+    <!--
+    <div class="editorial-image">
+      <img
+        src="images/dettaglio1.jpg"
+        alt="Dettaglio di una scultura"
+      >
+    </div>
+    -->
+
+
+    <!-- ======================================
+         WORKS
+    ======================================= -->
 
     <section
-      class="exhibitions-section"
-      id="exhibitions"
-      aria-labelledby="exhibitions-title"
+      class="works-section"
+      id="works"
     >
 
       <div class="section-heading">
 
-        <p class="section-number">
-          03
-        </p>
+        <span class="section-number">
+          02
+        </span>
 
-        <h2 id="exhibitions-title">
-
-          <span data-lang="it">
-            Esposizioni
-          </span>
-
-          <span data-lang="en">
-            Exhibitions
-          </span>
-
+        <h2>
+          <span data-lang="it">I pesci</span>
+          <span data-lang="en">The fish</span>
         </h2>
 
       </div>
 
 
-      <div class="exhibition-list">
+      <!-- COLLECTION IMAGE -->
 
-        <div class="exhibition-item">
+      <div class="collection-intro">
 
-          <span class="exhibition-year">
-            2026
-          </span>
+        <img
+          src="images/pesci-collezione.jpg"
+          alt="Collezione di pesci in metallo"
+          class="collection-image"
+        >
 
-          <div>
+        <div class="collection-caption">
 
-            <p data-lang="it">
-              Titolo esposizione
-            </p>
+          <p data-lang="it">
+            Una famiglia in continua evoluzione.
+            Ogni pesce nasce come pezzo unico.
+          </p>
 
-            <p data-lang="en">
-              Exhibition title
-            </p>
-
-            <small>
-              Bern, Switzerland
-            </small>
-
-          </div>
-
-        </div>
-
-
-        <div class="exhibition-item">
-
-          <span class="exhibition-year">
-            2025
-          </span>
-
-          <div>
-
-            <p data-lang="it">
-              Titolo esposizione
-            </p>
-
-            <p data-lang="en">
-              Exhibition title
-            </p>
-
-            <small>
-              Switzerland
-            </small>
-
-          </div>
+          <p data-lang="en">
+            A constantly evolving family.
+            Every fish begins as a unique piece.
+          </p>
 
         </div>
 
       </div>
 
+
+      <!-- FILTERS -->
+
+      <div class="filter-area">
+
+        <p class="filter-label">
+
+          <span data-lang="it">
+            Quanto è difficile da pescare?
+          </span>
+
+          <span data-lang="en">
+            How hard is it to catch?
+          </span>
+
+        </p>
+
+        <div
+          class="filter-bar"
+          aria-label="Filter artworks"
+        >
+
+          <button
+            class="active"
+            data-filter="all"
+          >
+            <span data-lang="it">Tutti</span>
+            <span data-lang="en">All</span>
+          </button>
+
+          <button data-filter="nibble">
+            <span data-lang="it">Abboccata</span>
+            <span data-lang="en">Nibble</span>
+          </button>
+
+          <button data-filter="bite">
+            <span data-lang="it">Morso</span>
+            <span data-lang="en">Bite</span>
+          </button>
+
+          <button data-filter="hooked">
+            <span data-lang="it">Allamato</span>
+            <span data-lang="en">Hooked</span>
+          </button>
+
+          <button data-filter="big-catch">
+            <span data-lang="it">Grande cattura</span>
+            <span data-lang="en">Big Catch</span>
+          </button>
+
+          <button data-filter="brass">
+            <span data-lang="it">Ottone</span>
+            <span data-lang="en">Brass</span>
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- FISH GRID GENERATED BY JAVASCRIPT -->
+
+      <div
+        class="art-grid"
+        id="art-grid"
+      ></div>
+
     </section>
 
 
-
-    <!-- =========================
+    <!-- ======================================
          CONTACT
-    ========================== -->
+    ======================================= -->
 
     <section
       class="contact-section"
       id="contact"
-      aria-labelledby="contact-title"
     >
 
       <div class="section-heading">
 
-        <p class="section-number">
-          04
-        </p>
+        <span class="section-number">
+          03
+        </span>
 
-        <h2 id="contact-title">
-
-          <span data-lang="it">
-            Contatti
-          </span>
-
-          <span data-lang="en">
-            Contact
-          </span>
-
+        <h2>
+          <span data-lang="it">Contatti</span>
+          <span data-lang="en">Contact</span>
         </h2>
 
       </div>
 
-
       <div class="contact-copy">
 
         <p data-lang="it">
-          Per informazioni sui pesci, esposizioni o collaborazioni:
+          Per informazioni,
+          esposizioni o collaborazioni.
         </p>
 
         <p data-lang="en">
-          For information about the fish, exhibitions or collaborations:
+          For enquiries,
+          exhibitions or collaborations.
         </p>
 
+        <a href="mailto:EMAIL@example.com">
+          EMAIL@example.com
+        </a>
 
-        <p>
-          <a href="mailto:EMAIL@example.com">
-            EMAIL@example.com
-          </a>
-        </p>
-
-
-        <p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Instagram
-          </a>
-        </p>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
 
       </div>
 
@@ -1211,10 +398,9 @@
   </main>
 
 
-
-  <!-- =========================
-       ARTWORK MODAL
-  ========================== -->
+  <!-- ======================================
+       MODAL
+  ======================================= -->
 
   <div
     class="art-modal"
@@ -1224,13 +410,7 @@
 
     <div class="art-modal-backdrop"></div>
 
-
-    <div
-      class="art-modal-content"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="modal-title"
-    >
+    <div class="art-modal-content">
 
       <button
         class="modal-close"
@@ -1240,13 +420,11 @@
         ×
       </button>
 
-
       <img
         id="modal-image"
         src=""
         alt=""
       >
-
 
       <div class="modal-info">
 
@@ -1263,10 +441,9 @@
   </div>
 
 
-
-  <!-- =========================
+  <!-- ======================================
        FOOTER
-  ========================== -->
+  ======================================= -->
 
   <footer class="site-footer">
 
@@ -1282,82 +459,232 @@
   </footer>
 
 
-
-  <!-- =========================
+  <!-- ======================================
        JAVASCRIPT
-  ========================== -->
+  ======================================= -->
 
   <script>
 
-    /* ---------------------------------
+    /* ======================================
        LANGUAGE
-    ---------------------------------- */
+    ======================================= */
 
     let currentLanguage = "it";
-
 
     const languageButtons =
       document.querySelectorAll(".language-button");
 
 
-    const languageElements =
-      document.querySelectorAll("[data-lang]");
+    function refreshLanguage() {
 
+      document
+        .querySelectorAll("[data-lang]")
+        .forEach(element => {
 
-    function setLanguage(language) {
+          element.style.display =
+            element.dataset.lang === currentLanguage
+              ? ""
+              : "none";
 
-      currentLanguage = language;
-
-      document.documentElement.lang = language;
-
-
-      languageElements.forEach(element => {
-
-        if (element.dataset.lang === language) {
-
-          element.style.display = "";
-
-        } else {
-
-          element.style.display = "none";
-
-        }
-
-      });
-
+        });
 
       languageButtons.forEach(button => {
 
         button.classList.toggle(
           "active",
-          button.dataset.language === language
+          button.dataset.language === currentLanguage
         );
 
       });
+
+      document.documentElement.lang =
+        currentLanguage;
 
     }
 
 
     languageButtons.forEach(button => {
 
-      button.addEventListener("click", () => {
+      button.addEventListener(
+        "click",
+        () => {
 
-        setLanguage(
-          button.dataset.language
-        );
+          currentLanguage =
+            button.dataset.language;
 
-      });
+          refreshLanguage();
+
+        }
+      );
 
     });
 
 
-    setLanguage("it");
+    /* ======================================
+       CATEGORY DATA
+    ======================================= */
+
+    const categories = {
+
+      "nibble": {
+        it: "Abboccata",
+        en: "Nibble",
+        materialIt: "Metallo",
+        materialEn: "Metal"
+      },
+
+      "bite": {
+        it: "Morso",
+        en: "Bite",
+        materialIt: "Metallo",
+        materialEn: "Metal"
+      },
+
+      "hooked": {
+        it: "Allamato",
+        en: "Hooked",
+        materialIt: "Metallo",
+        materialEn: "Metal"
+      },
+
+      "big-catch": {
+        it: "Grande cattura",
+        en: "Big Catch",
+        materialIt: "Metallo",
+        materialEn: "Metal"
+      },
+
+      "brass": {
+        it: "Ottone",
+        en: "Brass",
+        materialIt: "Ottone",
+        materialEn: "Brass"
+      }
+
+    };
 
 
+    /* ======================================
+       15 FISH
+       TEMPORARY FIXED CATEGORIES
+    ======================================= */
 
-    /* ---------------------------------
+    const fishData = [
+
+      { number: 1, category: "nibble" },
+      { number: 2, category: "bite" },
+      { number: 3, category: "hooked" },
+      { number: 4, category: "big-catch" },
+      { number: 5, category: "brass" },
+
+      { number: 6, category: "nibble" },
+      { number: 7, category: "hooked" },
+      { number: 8, category: "bite" },
+      { number: 9, category: "big-catch" },
+      { number: 10, category: "brass" },
+
+      { number: 11, category: "bite" },
+      { number: 12, category: "nibble" },
+      { number: 13, category: "big-catch" },
+      { number: 14, category: "hooked" },
+      { number: 15, category: "brass" }
+
+    ];
+
+
+    /* ======================================
+       BUILD FISH CARDS
+    ======================================= */
+
+    const artGrid =
+      document.getElementById("art-grid");
+
+
+    fishData.forEach(fish => {
+
+      const category =
+        categories[fish.category];
+
+      const article =
+        document.createElement("article");
+
+      article.className =
+        "art-card";
+
+      article.dataset.category =
+        fish.category;
+
+
+      article.innerHTML = `
+
+        <button
+          class="art-open"
+
+          data-title-it="Pesce ${fish.number}"
+          data-title-en="Fish ${fish.number}"
+
+          data-medium-it="${category.materialIt}"
+          data-medium-en="${category.materialEn}"
+
+          data-category-it="${category.it}"
+          data-category-en="${category.en}"
+
+          data-image="images/pesce${fish.number}.jpg"
+        >
+
+          <img
+            src="images/pesce${fish.number}.jpg"
+            alt="Pesce ${fish.number}"
+            class="artwork-image pesce-${fish.number}"
+          >
+
+          <div class="art-meta">
+
+            <h3>
+
+              <span data-lang="it">
+                Pesce ${fish.number}
+              </span>
+
+              <span data-lang="en">
+                Fish ${fish.number}
+              </span>
+
+            </h3>
+
+            <p>
+
+              <span data-lang="it">
+                ${category.it}
+              </span>
+
+              <span data-lang="en">
+                ${category.en}
+              </span>
+
+            </p>
+
+          </div>
+
+        </button>
+
+      `;
+
+      artGrid.appendChild(article);
+
+    });
+
+
+    /* ======================================
+       INITIAL LANGUAGE
+    ======================================= */
+
+    refreshLanguage();
+
+
+    /* ======================================
        FILTERS
-    ---------------------------------- */
+    ======================================= */
 
     const filterButtons =
       document.querySelectorAll(
@@ -1365,78 +692,88 @@
       );
 
 
-    const cards =
-      document.querySelectorAll(
-        ".art-card"
-      );
-
-
     filterButtons.forEach(button => {
 
-      button.addEventListener("click", () => {
+      button.addEventListener(
+        "click",
+        () => {
 
-        const filter =
-          button.dataset.filter;
-
-
-        filterButtons.forEach(item => {
-          item.classList.remove("active");
-        });
+          const filter =
+            button.dataset.filter;
 
 
-        button.classList.add("active");
+          filterButtons.forEach(item => {
+
+            item.classList.remove(
+              "active"
+            );
+
+          });
 
 
-        cards.forEach(card => {
+          button.classList.add(
+            "active"
+          );
 
-          if (
-            filter === "all" ||
-            card.dataset.category === filter
-          ) {
 
-            card.style.display = "";
+          document
+            .querySelectorAll(".art-card")
+            .forEach(card => {
 
-          } else {
+              if (
+                filter === "all" ||
+                card.dataset.category === filter
+              ) {
 
-            card.style.display = "none";
+                card.style.display = "";
 
-          }
+              } else {
 
-        });
+                card.style.display = "none";
 
-      });
+              }
+
+            });
+
+        }
+      );
 
     });
 
 
-
-    /* ---------------------------------
+    /* ======================================
        MODAL
-    ---------------------------------- */
+    ======================================= */
 
     const modal =
-      document.getElementById("art-modal");
-
+      document.getElementById(
+        "art-modal"
+      );
 
     const modalImage =
-      document.getElementById("modal-image");
-
+      document.getElementById(
+        "modal-image"
+      );
 
     const modalTitle =
-      document.getElementById("modal-title");
-
+      document.getElementById(
+        "modal-title"
+      );
 
     const modalCategory =
-      document.getElementById("modal-category");
-
+      document.getElementById(
+        "modal-category"
+      );
 
     const modalMedium =
-      document.getElementById("modal-medium");
+      document.getElementById(
+        "modal-medium"
+      );
 
-
-    const modalClose =
-      document.querySelector(".modal-close");
-
+    const closeButton =
+      document.querySelector(
+        ".modal-close"
+      );
 
     const modalBackdrop =
       document.querySelector(
@@ -1452,39 +789,45 @@
           "click",
           () => {
 
-            const lang =
-              currentLanguage;
-
-
             modalImage.src =
               button.dataset.image;
 
 
-            modalTitle.textContent =
-              lang === "it"
-                ? button.dataset.titleIt
-                : button.dataset.titleEn;
+            if (
+              currentLanguage === "it"
+            ) {
+
+              modalTitle.textContent =
+                button.dataset.titleIt;
+
+              modalCategory.textContent =
+                button.dataset.categoryIt;
+
+              modalMedium.textContent =
+                button.dataset.mediumIt;
+
+            } else {
+
+              modalTitle.textContent =
+                button.dataset.titleEn;
+
+              modalCategory.textContent =
+                button.dataset.categoryEn;
+
+              modalMedium.textContent =
+                button.dataset.mediumEn;
+
+            }
 
 
-            modalCategory.textContent =
-              lang === "it"
-                ? button.dataset.categoryIt
-                : button.dataset.categoryEn;
-
-
-            modalMedium.textContent =
-              lang === "it"
-                ? button.dataset.mediumIt
-                : button.dataset.mediumEn;
-
-
-            modal.classList.add("open");
+            modal.classList.add(
+              "open"
+            );
 
             modal.setAttribute(
               "aria-hidden",
               "false"
             );
-
 
             document.body.classList.add(
               "modal-open"
@@ -1496,10 +839,11 @@
       });
 
 
-
     function closeModal() {
 
-      modal.classList.remove("open");
+      modal.classList.remove(
+        "open"
+      );
 
       modal.setAttribute(
         "aria-hidden",
@@ -1513,7 +857,7 @@
     }
 
 
-    modalClose.addEventListener(
+    closeButton.addEventListener(
       "click",
       closeModal
     );
@@ -1530,8 +874,7 @@
       event => {
 
         if (
-          event.key === "Escape" &&
-          modal.classList.contains("open")
+          event.key === "Escape"
         ) {
 
           closeModal();
@@ -1542,10 +885,9 @@
     );
 
 
-
-    /* ---------------------------------
+    /* ======================================
        CURRENT YEAR
-    ---------------------------------- */
+    ======================================= */
 
     document.getElementById(
       "current-year"
@@ -1555,4 +897,5 @@
   </script>
 
 </body>
+
 </html>
