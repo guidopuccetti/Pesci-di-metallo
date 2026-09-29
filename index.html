@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Artist Name — selected works, exhibitions, biography, and contact information." />
+  <meta name="theme-color" content="#f5f3ee" />
+  <title>Artist Name — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Artist Name, home">Artist Name</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+      <a href="#exhibitions">Exhibitions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Visual artist · Bern / elsewhere</p>
+        <h1 id="hero-title">Artist Name</h1>
+        <p class="hero-intro">A concise one- or two-sentence statement about the artist’s practice, materials, recurring ideas, and point of view.</p>
+      </div>
+      <figure class="hero-artwork artwork-placeholder placeholder-hero" role="img" aria-label="Featured artwork placeholder">
+        <figcaption>Featured work · replace with your image</figcaption>
+      </figure>
+    </section>
+
+    <section id="works" class="section works-section" aria-labelledby="works-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2 id="works-title">Works</h2>
+      </div>
+
+      <div class="filter-bar" aria-label="Filter artworks">
+        <button class="filter-button is-active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="painting">Painting</button>
+        <button class="filter-button" data-filter="sculpture">Sculpture</button>
+        <button class="filter-button" data-filter="installation">Installation</button>
+      </div>
+
+      <div class="art-grid">
+        <article class="art-card" data-category="painting">
+          <button class="art-open" data-title="Untitled I" data-year="2026" data-medium="Oil on canvas" data-dimensions="120 × 90 cm" data-image="">
+            <div class="artwork-placeholder tone-1" aria-hidden="true"></div>
+            <div class="art-meta"><h3>Untitled I</h3><p>Oil on canvas · 2026</p></div>
+          </button>
+        </article>
+
+        <article class="art-card" data-category="sculpture">
+          <button class="art-open" data-title="Study for a Distance" data-year="2025" data-medium="Steel, plaster" data-dimensions="Variable" data-image="">
+            <div class="artwork-placeholder tall tone-2" aria-hidden="true"></div>
+            <div class="art-meta"><h3>Study for a Distance</h3><p>Steel, plaster · 2025</p></div>
+          </button>
+        </article>
+
+        <article class="art-card" data-category="installation">
+          <button class="art-open" data-title="Soft Architecture" data-year="2025" data-medium="Textile, light, found objects" data-dimensions="Installation view" data-image="">
+            <div class="artwork-placeholder wide tone-3" aria-hidden="true"></div>
+            <div class="art-meta"><h3>Soft Architecture</h3><p>Installation · 2025</p></div>
+          </button>
+        </article>
+
+        <article class="art-card" data-category="painting">
+          <button class="art-open" data-title="Blue Interval" data-year="2024" data-medium="Pigment and acrylic on linen" data-dimensions="150 × 110 cm" data-image="">
+            <div class="artwork-placeholder tone-4" aria-hidden="true"></div>
+            <div class="art-meta"><h3>Blue Interval</h3><p>Pigment, acrylic · 2024</p></div>
+          </button>
+        </article>
+
+        <article class="art-card" data-category="sculpture">
+          <button class="art-open" data-title="Weight / Weather" data-year="2024" data-medium="Wood, resin, stone" data-dimensions="78 × 55 × 42 cm" data-image="">
+            <div class="artwork-placeholder square tone-5" aria-hidden="true"></div>
+            <div class="art-meta"><h3>Weight / Weather</h3><p>Wood, resin, stone · 2024</p></div>
+          </button>
+        </article>
+
+        <article class="art-card" data-category="installation">
+          <button class="art-open" data-title="A Room Keeps Time" data-year="2023" data-medium="Mixed-media installation" data-dimensions="Dimensions variable" data-image="">
+            <div class="artwork-placeholder tall tone-6" aria-hidden="true"></div>
+            <div class="art-meta"><h3>A Room Keeps Time</h3><p>Mixed media · 2023</p></div>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section split-section" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2 id="about-title">Biography & practice</h2>
+      </div>
+      <div class="prose">
+        <p>Artist Name is a visual artist whose practice explores memory, material, place, and the unstable relationship between objects and the spaces around them.</p>
+        <p>Working across painting, sculpture, and installation, the artist combines deliberate construction with intuitive processes. Replace this text with a 100–200 word biography or artist statement.</p>
+        <a class="text-link" href="assets/artist-cv.pdf">Download CV <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section id="exhibitions" class="section" aria-labelledby="exhibitions-title">
+      <div class="section-heading">
+        <p class="eyebrow">Selected exhibitions</p>
+        <h2 id="exhibitions-title">Exhibitions</h2>
+      </div>
+
+      <div class="exhibition-list">
+        <div class="exhibition-row"><span>2026</span><p><strong>Exhibition Title</strong>, Institution / Gallery, City</p></div>
+        <div class="exhibition-row"><span>2025</span><p><strong>Group Exhibition</strong>, Institution / Gallery, City</p></div>
+        <div class="exhibition-row"><span>2024</span><p><strong>Exhibition Title</strong>, Institution / Gallery, City</p></div>
+        <div class="exhibition-row"><span>2023</span><p><strong>Residency / Project</strong>, Organization, City</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">For exhibitions, commissions, and enquiries.</h2>
+      <div class="contact-links">
+        <a href="mailto:studio@example.com">studio@example.com</a>
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Artist Name</p>
+    <p>Built with GitHub Pages</p>
+  </footer>
+
+  <dialog class="art-dialog" id="art-dialog">
+    <button class="dialog-close" aria-label="Close artwork details">×</button>
+    <div class="dialog-layout">
+      <div id="dialog-art" class="dialog-artwork artwork-placeholder tone-1" aria-hidden="true"></div>
+      <div class="dialog-copy">
+        <p class="eyebrow">Artwork</p>
+        <h2 id="dialog-title">Untitled I</h2>
+        <p id="dialog-medium"></p>
+        <p id="dialog-dimensions"></p>
+        <p id="dialog-year"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
