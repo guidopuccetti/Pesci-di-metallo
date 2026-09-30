@@ -800,26 +800,43 @@ section {
 
 .site-footer {
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
 
-  justify-content:
-    space-between;
+  padding: 28px var(--page-padding);
 
-  gap: 20px;
-
-  padding:
-    22px
-    var(--page-padding);
-
-  border-top:
-    1px solid var(--line);
+  border-top: 1px solid var(--line);
 
   font-size: 12px;
-
   color: var(--muted);
 }
 
-.site-footer p {
+.footer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-main p {
   margin: 0;
+}
+
+.footer-cv {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-cv a {
+  color: var(--text);
+  border-bottom: 1px solid var(--text);
+  padding-bottom: 2px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-cv a:hover {
+  opacity: 0.55;
 }
 
 
@@ -1017,10 +1034,14 @@ section {
     padding: 14px;
   }
 
-  .site-footer {
-    flex-direction: column;
+.site-footer {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
 
-    gap: 4px;
-  }
-
+.footer-cv {
+  flex-direction: column;
+  gap: 10px;
+}
 }
