@@ -328,13 +328,13 @@ section {
 }
 
 .history-text p {
-  margin: 0 0 24px;
+  margin: 0 0 30px;
 
-  font-size: clamp(20px, 2.4vw, 32px);
+  font-size: clamp(21px, 3vw, 37px);
 
-  line-height: 1.35;
+  line-height: 1.25;
 
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
 }
 
 .history-image-wrapper {
