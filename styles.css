@@ -63,6 +63,7 @@ body.modal-open {
   display: grid;
   grid-template-columns: 1fr auto auto;
   align-items: center;
+
   gap: 30px;
 
   padding: 18px var(--page-padding);
@@ -223,8 +224,6 @@ section {
   border-bottom: 1px solid var(--text);
 
   font-size: 14px;
-
-  transition: opacity 0.2s ease;
 }
 
 .hero-cv-links a:hover {
@@ -283,6 +282,7 @@ section {
 
 .about-copy {
   max-width: 900px;
+
   margin-left: 70px;
 }
 
@@ -293,6 +293,62 @@ section {
 
   line-height: 1.25;
   letter-spacing: -0.02em;
+}
+
+
+/* HISTORY */
+
+.history-section {
+  padding-top: 110px;
+  padding-bottom: 140px;
+
+  border-top: 1px solid var(--line);
+}
+
+.history-block {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(0, 1fr);
+
+  gap: 60px;
+
+  align-items: center;
+
+  margin-bottom: 120px;
+}
+
+.history-block:last-child {
+  margin-bottom: 0;
+}
+
+.history-text {
+  max-width: 700px;
+}
+
+.history-text p {
+  margin: 0 0 24px;
+
+  font-size: clamp(20px, 2.4vw, 32px);
+
+  line-height: 1.35;
+
+  letter-spacing: -0.015em;
+}
+
+.history-image-wrapper {
+  width: 100%;
+}
+
+.history-image {
+  width: 100%;
+
+  max-height: 760px;
+
+  display: block;
+
+  object-fit: cover;
 }
 
 
@@ -314,6 +370,7 @@ section {
 
 .collection-image {
   width: 100%;
+
   display: block;
 
   object-fit: cover;
@@ -331,6 +388,7 @@ section {
   font-size: clamp(18px, 2vw, 26px);
 
   line-height: 1.35;
+
   color: var(--muted);
 }
 
@@ -345,6 +403,7 @@ section {
   margin: 0 0 18px;
 
   font-size: 14px;
+
   color: var(--muted);
 }
 
@@ -372,13 +431,14 @@ section {
 
 .filter-bar button.active {
   background: var(--text);
+
   border-color: var(--text);
 
   color: var(--background);
 }
 
 
-/* GRID */
+/* FISH GRID */
 
 .art-grid {
   display: grid;
@@ -460,6 +520,7 @@ section {
   margin: 0;
 
   font-size: 14px;
+
   color: var(--muted);
 }
 
@@ -593,6 +654,7 @@ section {
 
 .site-footer {
   display: flex;
+
   justify-content: space-between;
   align-items: flex-end;
 
@@ -603,12 +665,14 @@ section {
   border-top: 1px solid var(--line);
 
   font-size: 12px;
+
   color: var(--muted);
 }
 
 .footer-main {
   display: flex;
   flex-direction: column;
+
   gap: 4px;
 }
 
@@ -645,7 +709,9 @@ section {
   }
 
   .site-header {
-    grid-template-columns: 1fr auto;
+    grid-template-columns:
+      1fr
+      auto;
   }
 
   .main-nav {
@@ -668,12 +734,18 @@ section {
   }
 
   .section-heading {
-    grid-template-columns: 50px 1fr;
+    grid-template-columns:
+      50px
+      1fr;
   }
 
   .about-copy,
   .contact-copy {
     margin-left: 50px;
+  }
+
+  .history-block {
+    gap: 35px;
   }
 
 }
@@ -727,10 +799,6 @@ section {
     font-size: 18px;
   }
 
-  .hero-cv-links {
-    gap: 12px;
-  }
-
   .hero-image {
     width: 100%;
 
@@ -744,6 +812,7 @@ section {
 
   .intro-section,
   .about-section,
+  .history-section,
   .works-section,
   .contact-section {
     padding-top: 75px;
@@ -777,6 +846,23 @@ section {
 
   .about-copy p {
     font-size: 24px;
+  }
+
+  .history-block,
+  .history-block-reverse {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+
+    margin-bottom: 80px;
+  }
+
+  .history-text p {
+    font-size: 22px;
+  }
+
+  .history-image {
+    max-height: none;
   }
 
   .collection-intro {
